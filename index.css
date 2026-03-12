@@ -1,0 +1,191 @@
+body{
+background:#0a0a0a;
+color:#00ffcc;
+font-family:monospace;
+padding:40px;
+padding-top: 80px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+h1,h2{
+color:#00ffff;
+}
+
+.bar{
+background:#222;
+height:10px;
+border-radius:5px;
+overflow: hidden;
+}
+
+.bar span{
+display:block;
+height:100%;
+background:#00ffcc;
+width: 0;
+transition:width 2s ease;
+}
+
+.project-card{
+border:1px solid #00ffcc;
+padding:20px;
+margin:10px 0;
+transition:0.3s;
+}
+
+.project-card:hover{
+background:#00ffcc;
+color:black;
+}
+
+#typing::after{
+content: "|";
+animation: blink 1s infinite;
+}
+
+@keyframes blink{
+0%{opacity:1;}
+50%{opacity:0;}
+100%{opacity:1;}
+}
+
+header{
+margin-bottom:50px;
+}
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width: 95%;
+
+
+display:flex;
+align-items:center;
+
+padding:15px 40px;
+padding-right: 80px;
+
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(6px);
+
+border-bottom:1px solid #00ffcc;
+
+z-index:1000;
+}
+
+
+.logo{
+font-weight:bold;
+color:#00ffcc;
+font-family:monospace;
+}
+
+.nav-links{
+margin-left:auto;
+width: auto ;
+display:flex;
+
+list-style:none;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#00ffcc;
+font-family:monospace;
+white-space: nowrap;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:white;
+}
+#typing{
+font-size:40px;
+color:#00ffff;
+}
+
+#typing2{
+font-size:18px;
+color:#00ffcc;
+}
+
+#matrix{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+background:black;
+}
+
+.project-card{
+background:#111;
+border:1px solid #00ffcc;
+padding:20px;
+margin:20px 0;
+transition:transform 0.2s;
+transform-style:preserve-3d;
+}
+
+.socials{
+margin-top:15px;
+display:flex;
+gap:20px;
+}
+
+.socials a{
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+
+border:1px solid #00ffcc;
+border-radius:8px;
+
+color:#00ffcc;
+font-size:22px;
+
+text-decoration:none;
+
+transition:0.3s;
+}
+
+.socials a:hover{
+background:#00ffcc;
+color:black;
+transform:translateY(-5px);
+}
+
+.terminal-box{
+background:black;
+border:1px solid #00ffcc;
+padding:20px;
+font-family:monospace;
+min-height:200px;
+}
+
+#boot p,
+#output p{
+margin:5px 0;
+}
+
+.hire{
+color:#dc48fe;
+font-weight:bold;
+font-size: 14px;
+}
+
+#commandInput{
+width:100%;
+background:black;
+border:none;
+color:#00ffcc;
+outline:none;
+margin-top:10px;
+font-family:monospace;
+}
